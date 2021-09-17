@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+ *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family:'poppins';
+}
+
+body {
+  margin:0px;
+  padding:0px;
+}
+form{
+  margin:0px;
+  padding: 0px; 
+}
+form header {
+  margin: 0 0 20px 0; 
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+
+header {
+    width: 100%;
+    background-color: #03a3c7;
+    margin: 0%;
+    padding: 0%;
+}
+nav{ 
+    width: 100%;
+    background-color: #03a3c7;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+nav p, nav h1{ 
+    font-family: Helvetica, sans-serif;
+}
+/*primera division*/
+#icono h1{
+    display: none;
+    text-align: center; 
+    position: absolute;
+    color: white;
+    font-size: 3em;
+}
+
+/*segunda division*/
+#btn_menu {
+    display: none;
+}
+header label{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 0%;
+    display: none;
+}
+header label:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.menu ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+}
+.menu li{
+    background-color: #03a3c7;
+    margin: 0%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li:hover{
+    background-color: #03058c;
+    color: white;
+    border-bottom: white solid 5px;
+    transition: 0.5s;
+}
+#Titulo li:hover{ 
+    background-color: #03a3c7;
+    border-bottom: none;
+}
+.menu li a{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+.menu span{ 
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    margin-right: 1em;
+}
+.menu li input{
+    border-radius: 5px;
+    border: 0;
+}
+.icon-home a{ 
+    font-family: Helvetica;
+}
+header h1{
+    width: 250px;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+#Titulo:hover{
+    background-color: #03058c;
+    opacity: 1;
+    color: #03058c;
+    border: none;
+}
+#Titulo li a p{ 
+    margin-right: 0%;
+}
+/*Responsive*/
+@media (max-width: 1100px) {
+    #Titulo{
+        display: none;
+    }
+    #icono{ 
+        display: flex;
+        flex-direction: row;
+    }
+    #icono h1{
+        display: flex;
+        left: 45%;
+        color: white;
+    }
+    #icono label{ 
+        display: flex;
+        border-right: white solid 1px;
+    }
+    .content{ 
+        justify-content: flex-start;
+    }
+    .icon-menu{ 
+        display: flex;
+        font-size: 2em;
+        padding: 10%;
+        margin: 0%;
+        margin-left: -10%;
+        margin-top: -10%;
+    }
+    .menu{
+        margin-left: -50%;
+        position: absolute;
+        background-color: #03058c;
+        width: 40%;
+        transition: 0.9999s;
+        z-index: 10000;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    #btn_menu:checked~.menu{
+        margin-left: 0%;
+        transition: 0.5s;
+    }
+    
+    
+}
+footer{
+  width:100%;
+  background:#202020;
+  color:white;
+}
+.container-footer-all{
+  margin:auto;
+  width:100%;
+  padding:40px;
+}
+.container-body{
+  display:flex;
+  justify-content: space-between;
+}
+.column1{
+  max-width:400px;
+}
+.column1 h1{
+   font-size:22px;
+}
+.column1 p{
+ font-size: 17px; 
+ color:#C7C7C7;
+ margin-top:20px;     
+}
+
+.column2{
+  max-width: 400px;
+}
+.column2 h1{
+  font-size: 22px;
+}
+ .row{
+  margin-top:20px;
+  display:flex;
+}
+.row img{
+  width:36px;
+  height:36px;
+  transition:all 300ms;
+}
+.row img:hover{
+  transition:all 300ms;
+  transform: scale(1.2);
+  
+}
+
+.row label{
+  margin-top:10px;
+  margin-left:20px;
+  color:#C7C7C7;
+}
+.column3{
+  max-width: 400px;
+}
+
+.column3 h1{
+  font-size:22px;
+}
+.row2{
+  margin-top:20px;
+}
+.row2 img{
+  width:36px;
+  height:36px;
+}
+.row2 label{
+  margin-left:20px;
+  max-width: 150px;
+
+}
+.container-footer{
+  max-width: 100%;
+  background:#101010;
+  padding:20px;
+  text-align: center;
+}
+.copyright{
+  color:#C7C7C7;
+
+}
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=number],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}

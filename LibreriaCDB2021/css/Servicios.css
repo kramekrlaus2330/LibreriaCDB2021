@@ -1,0 +1,353 @@
+html{
+    background-color: turquoise;
+  }
+  body{
+      margin: 0%;
+      padding: 0%;
+      background-image: url(../img/fondoS.jpg);
+  }
+  /*codigo HTML*/
+  header {
+      width: 100%;
+      background-color: #03a3c7;
+      margin: 0%;
+      padding: 0%;
+  }
+  nav{ 
+      width: 100%;
+      background-color: #03a3c7;
+      margin: 0%;
+      padding: 0%;
+      position: relative;
+  }
+  nav p, nav h1{ 
+      font-family: Helvetica, sans-serif;
+  }
+  
+  /*primera division*/
+  #icono h1{
+      display: none;
+      text-align: center; 
+      position: absolute;
+      color: white;
+      font-size: 3em;
+  }
+  
+  /*segunda division*/
+  #btn_menu {
+      display: none;
+  }
+  header label{
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      margin: 0%;
+      display: none;
+  }
+  header label:hover{
+      cursor: pointer;
+      background-color: white;
+  }
+  .menu ul{
+      margin: 0%;
+      padding: 0%;
+      list-style: none;
+      display: flex;
+      justify-items: flex-end;
+  }
+  .menu li{
+      background-color: #03a3c7;
+      margin: 0%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .menu li:hover{
+      background-color: #03058c;
+      color: white;
+      border-bottom: white solid 5px;
+      transition: 0.5s;
+  }
+  #Titulo li:hover{ 
+      background-color: #03a3c7;
+      border-bottom: none;
+  }
+  .menu li a{
+      margin: 0%;
+      padding: 0%;
+      color: white;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+  }
+  .menu span{ 
+      margin: 0%;
+      padding: 0%;
+      color: #fff;
+      margin-right: 1em;
+  }
+  .menu li input{
+      border-radius: 5px;
+      border: 0;
+  }
+  .icon-home a{ 
+      font-family: Helvetica;
+  }
+  header h1{
+      width: 250px;
+      margin: 0%;
+      padding: 0%;
+      color: white;
+  }
+  #Titulo:hover{
+      background-color: #03058c;
+      opacity: 1;
+      color: #03058c;
+      border: none;
+  }
+  #Titulo li a p{ 
+      margin-right: 0%;
+  }
+  /*Responsive*/
+  @media (max-width: 900px) {
+      #Titulo{
+          display: none;
+      }
+      #icono{ 
+          display: flex;
+          flex-direction: row;
+      }
+      #icono h1{
+          display: flex;
+          left: 45%;
+          color: white;
+      }
+      #icono label{ 
+          display: flex;
+          border-right: white solid 1px;
+      }
+      .content{ 
+          justify-content: flex-start;
+      }
+      .icon-menu{ 
+          display: flex;
+          font-size: 2em;
+          padding: 10%;
+          margin: 0%;
+          margin-left: -10%;
+          margin-top: -10%;
+      }
+      .menu{
+          margin-left: -50%;
+          position: absolute;
+          background-color: #03058c;
+          width: 48%;
+          transition: 0.9999s;
+          z-index: 10000;
+      }
+      .menu ul{
+          flex-direction: column;
+      }
+      #btn_menu:checked~.menu{
+          margin-left: 0%;
+          transition: 0.5s;
+      }
+      
+  }
+  #entrada{
+    background-image: url(https://www.xtrafondos.com/wallpapers/textura-pared-de-ladrillos-3307.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    padding: 3%;
+  }
+  #entrada h2{
+    font-weight: 300;
+    font-family: "bello-pro";
+    text-align: center;
+    font-size: 4vw;
+    background-color: black;
+    opacity: 70%;
+    border: solid 5px #9dfdc7;
+    margin-left: 37%;
+    margin-right: 36%;
+    padding: 2%;
+    color: #9dfdc7;
+    font: oblique bold  helvetica;
+  }
+  #fondo{
+    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url(../img/fondo.jpg);
+  }
+  /* Card Based Layout - Base styles */
+  body {
+      background: #ecf0f1;
+    }
+    
+    .site-title {
+        color: white;
+    }
+    
+    .card {
+        background: white;
+        margin-bottom: 2em;	
+    }
+    
+    .card a {
+        color: black;
+        text-decoration: none;
+    }
+    .card h2{
+      font-weight: 300;
+      text-align: center;
+      color: #152744;
+      font: oblique bold 200% helvetica;
+    }
+    .card a:hover {
+        box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+    
+    .card-content {
+        padding: 1.9em;
+    }
+    
+  
+    .card-content p {
+        text-align: justify;
+        font-size: 98%;
+    }
+    
+    img {
+      width: 100%;
+      height: 400px;
+    }
+    
+    /* Flexbox styles */
+    @media screen and (min-width: 40em) {  
+      .cards {
+        margin-top: -1em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    
+      .card {
+        margin-bottom: 1em;
+        display: flex;
+        flex: 0 1 calc(50% - 0.5em);
+        /* width: calc(50% - 1em); */
+      }
+    } /* mq 40em*/
+    
+    @media screen and (min-width: 60em) {
+      .cards {
+        margin-top: inherit;
+      }
+      
+      .card {
+        margin-bottom: 2em;
+        display: flex;
+        flex: 0 1 calc(33% - 0.5em);
+      }
+    }
+    
+  
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+  }
+  
+  footer{
+    width:100%;
+    background:#202020;
+    color:white;
+   
+  }
+  .container-footer-all{
+    margin:auto;
+    width:100%;
+    max-width: 1200px;
+    padding:40px;
+  }
+  .container-body{
+    display:flex;
+    justify-content: space-between;
+  }
+  .column1{
+    max-width:400px;
+  }
+  .column1 h1{
+     font-size:22px;
+  }
+  .column1 p{
+   font-size: 17px; 
+   color:#C7C7C7;
+   margin-top:20px;     
+  }
+  
+  .column2{
+    max-width: 400px;
+  }
+  .column2 h1{
+    font-size: 22px;
+  }
+   .row{
+    margin-top:20px;
+    display:flex;
+  }
+  .row img{
+    width:36px;
+    height:36px;
+    transition:all 300ms;
+  }
+  .row img:hover{
+    transition:all 300ms;
+    transform: scale(1.2);
+    
+  }
+  
+  .row label{
+    margin-top:10px;
+    margin-left:20px;
+    color:#C7C7C7;
+  }
+  .column3{
+    max-width: 400px;
+  }
+  
+  .column3 h1{
+    font-size:22px;
+  }
+  .row2{
+    margin-top:20px;
+  }
+  .row2 img{
+    width:36px;
+    height:36px;
+  }
+  .row2 label{
+    margin-left:20px;
+    max-width: 150px;
+  
+  }
+  .container-footer{
+    max-width: 100%;
+    background:#101010;
+    padding:20px;
+    text-align: center;
+  }
+  .copyright{
+    color:#C7C7C7;
+  
+  }
